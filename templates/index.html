@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediccion de Riesgo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="max-w-7xl mx-auto py-5">
+      <h1 class="font-bold text-3xl text-center">Prediccion de Iris</h1>
+      <form
+        action="/predict"
+        method="post"
+        class="border bg-white rounded max-w-xl mx-auto mt-10 p-4"
+      >
+        <div class="flex flex-col gap-2 pb-2">
+          <label for="nitrogeno">Nitrogeno</label>
+          <input
+            type="number"
+            name="nitrogeno"
+            id="nitrogeno"
+            step="0.1"
+            min="0.0"
+            required
+            placeholder="Ingrese el valor"
+            class="border rounded p-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 pb-2">
+          <label for="fosforo">Fosforo</label>
+          <input
+            type="number"
+            name="fosforo"
+            id="fosforo"
+            min="0.0"
+            required
+            placeholder="Ingrese el valor"
+            class="border rounded p-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 pb-2">
+          <label for="potasio">Potasio</label>
+          <input
+            type="number"
+            name="potasio"
+            id="potasio"
+            min="0.0"
+            required
+            placeholder="Ingrese el valor"
+            class="border rounded p-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 pb-2">
+          <label for="temperatura">Temperatura</label>
+          <input
+            type="number"
+            name="temperatura"
+            id="temperatura"
+            required
+            placeholder="Ingrese el valor"
+            class="border rounded p-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 pb-2">
+          <label for="humedad">Humedad</label>
+          <input
+            type="number"
+            name="humedad"
+            id="humedad"
+            min="0.0"
+            required
+            placeholder="Ingrese el valor"
+            class="border rounded p-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 pb-2">
+          <label for="ph">PH</label>
+          <input
+            type="number"
+            name="ph"
+            id="ph"
+            min="0.0"
+            required
+            placeholder="Ingrese el valor"
+            class="border rounded p-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 pb-2">
+          <label for="precipitacion">Precipitacion</label>
+          <input
+            type="number"
+            name="precipitacion"
+            id="precipitacion"
+            min="0.0"
+            required
+            placeholder="Ingrese el valor"
+            class="border rounded p-2"
+          />
+        </div>
+        <button class="w-full px-4 py-2 bg-blue-500 text-white rounded" type="submit">Realizar prediccion</button>
+      </form>
+    </div>
+  </body>
+</html>
